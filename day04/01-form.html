@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang=KO-KR>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="utf-8">
+    <title>HTML Form 디자인</title>
+  </head>
+  <body>
+    <form name="register-form" action="#" method="GET">
+
+      <fieldset>
+        <legend>필수 입력</legend>
+      <!-- 레이블 요소는 폼안에만 사용 -->
+
+      <div>
+        <label for="register-id">ID</label>
+        <input name="register-id" id="register-id" type="text" placeholder="아이디를 입력하세요.">
+      </div>
+      <div>
+        <label for="register-password">password</label>
+        <input name="register-password" id="register-password" type="password">
+      </div>
+
+      <div>
+        <label for="register-email">E-Mail</label>
+        <input type="email" id="register-email" placeholder="user@email.com">
+      </div>
+      </fieldset>
+
+
+      <!-- <div> -->
+        <!-- <input id="register-male" name="register-gender-a-type" type="radio"><label for="register-male">Male</label>
+        <input id="register-female name="register-gender-b-type" type="radio"><label for="register-female">female</label> -->
+      <!-- </div> -->
+
+      <div>
+        <h3>Gender</h3>
+        <label> <input checked name="register-gender" name="1" type="radio" >Male </label>
+        <label> <input name="register-gender" name="2" type="radio" >Female </label>
+      </div>
+
+      <div>
+        <h3>hobby</h3>
+        <ul>
+          <li>
+            <label><input type="checkbox" value="book" name="register-hobby">reading book</label>
+          </li>
+          <li>
+            <label><input type="checkbox" value="movie" name="register-hobby">watch movie</label>
+          </li>
+          <li>
+            <label><input type="checkbox" value="com-game" name="register-hobby">computer game</label>
+          </li>
+        </ul>
+      </div>
+  <hr>
+      <div>
+        <label for="register-upload">File</label>
+        <input multiple type="file" id="register-upload" name="register-upload">
+      </div>
+  <hr>
+
+      <textarea name="register-massage" cols="30" rows="10"></textarea>
+  <hr>
+
+      <div>
+
+        <h3>Your Jobs</h3>
+        <select name="register-job">
+        <option value="">Select your job</option>
+          <optgroup>web
+            <option value="planner">Planner</option>
+            <option value="developer">developer</option>
+            <option value="designer">designer</option>
+          </optgroup>
+          <option value="instructor">instructor</option>
+          <option value="doctor">doctor</option>
+          <option value="student">student</option>
+        </select>
+
+      </div>
+  <hr>
+
+      <div>
+      <input type="submit" value="전송">
+
+      <BUTTON type="reset">초기화</BUTTON>
+      </div>
+
+    </form>
+  </body>
+</html>
