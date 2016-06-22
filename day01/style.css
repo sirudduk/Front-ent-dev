@@ -1,0 +1,8 @@
+<style>
+  .ie7 body { background: #db439b; }
+  .ie8 body { background: #39bcd3; }
+  .ie9 body { background: #62d834; }
+  body {
+    background: #8b5fe4;
+  }
+</style>
