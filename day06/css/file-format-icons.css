@@ -37,26 +37,26 @@ ol.reset-list {
  * 배경 이미지로 설정하는 스타일
  * ----------------------------- */
 a[href$=".psd"] {
-  background-image: url("../images/psd.png");
+  background-image: url("./image/psd.png");
 }
 a[href$=".ai"] {
-  background-image: url("../images/ai.png");
+  background-image: url(../image/ai.png);
   color: ##45A815;
 }
 a[href$=".txt"] {
-  background-image: url("../images/txt.png");
+  background-image: url("../image/txt.png");
   color: ##45A815;
 }
 a[href$=".avi"] {
-  background-image: url("../images/avi.png");
+  background-image: url("../image/avi.png");
   color: ##45A815;
 }
 a[href$=".mov"] {
-  background-image: url("../images/mov.png");
+  background-image: url("../image/mov.png");
   color: ##45A815;
 }
 a[href$=".pdf"] {
-  background-image: url("../images/pdf.png");
+  background-image: url("../image/pdf.png");
   color: ##45A815;
 }
 a[href^="http://"][target="_blank"] {
