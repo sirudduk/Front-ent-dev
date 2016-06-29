@@ -278,7 +278,6 @@ abbr {
 * 선택할 경우 가상으로 요소를 만들어 디자인
 *------------------------------*/
 ::selection {
-  text-shadow: 2px 2px 8px #6300b5;
   background-color: #E40000;
   color: #fff;
 }

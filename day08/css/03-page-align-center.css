@@ -1,0 +1,26 @@
+.page {
+  width: 90%;
+  max-width: 900px;
+
+  height: 333px;
+  margin: 100px auto;
+  padding-top: 1.25rem;
+  padding-left: 1.25rem;
+  background: #7045cf;
+}
+
+.page::before {
+  display: block;
+  content: attr(class);
+  color: #fff;
+  font-size: 1.375rem;
+}
+
+.inner-page {
+  width: 250px;
+  height: 111px;
+  margin: 50px;
+  padding-top: auto;;
+  padding-left: auto;
+  background: #D75D57;
+}
