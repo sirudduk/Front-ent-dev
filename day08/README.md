@@ -1,24 +1,4 @@
-###### Front-End Develop SCHOOL
-
-# DAY 08
-
-### 수행 과제
-
-- [06/30] CSS Selector 분류 표 작성(`Markdown` 사용)해서 GitHub 저장소에 등록. ※ [W3C, Selectors Level 3](https://www.w3.org/TR/selectors/#selectors) 참고.
-- [06/30] 팀 엑티비티 코드 리뷰 로그(Code Review Log), 리팩토링 결과 정리하여 GitHub 저장소에 등록.
-- [06/30] 배운 내용을 토대로 시험 문제 20문항 출제. (주관식 최대 5개)
-- [06/30] PSD, Sketch 를 사용하여 웹 서비스 와이어프레임 제작.<br>
-  ![wireframe](../Assets/wireframe.png)
-- [06/30] 오늘 과제 (코드 구현 후, Github 저장소에 등록)
-	- [참조: Vertical Centering using CSS](http://www.student.oulu.fi/~laurirai/www/css/middle/)
-		- Common code of examples
-		- Using line-height (and vertical-align)
-		- Using display:table-cell
-		- Using line-height and display:inline-block
-	- 본문의 높이를 vh를 이용하지 않고 브라우저 창 가득 채우기 (참조: Keynote CSS - 03 Box-Model 63~69페이지)
-
-
--
+#DAY08 TIL
 
 ### 진행 내용
 
@@ -82,7 +62,7 @@
 }
 ```
 
-> **[IE 비표준 모드]**에서 박스의 폭은 padding과 border를 포함한다. margin: auto; 또한 작동하지 않는다. IE에서 레이아웃이 깨진다면 이러한 이슈를 고려할 수도 있다. 
+> **[IE 비표준 모드]**에서 박스의 폭은 padding과 border를 포함한다. margin: auto; 또한 작동하지 않는다. IE에서 레이아웃이 깨진다면 이러한 이슈를 고려할 수도 있다.
 
 -
 
@@ -145,7 +125,7 @@ p {
 	/* [조건]부모요소의 패딩(혹은 보더)가 없을 경우:
 		 - 자식 마진이 부모의 마진보다 클경우 부모 바깥 범위에 영향을 끼친다.
 		 - 부모요소에 패딩(혹은 보더) 값을 주어 자식요소의 마진이 부모요소 내부에만 영향을 주도록 한다
-	*/ 
+	*/
 	margin-top: 30px;
 	background: purple;
 }
