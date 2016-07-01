@@ -1,0 +1,17 @@
+
+
+
+ul>li {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  background: #D75D57;
+  margin: 4px;
+  vertical-align: top;
+}
+
+#13 {
+  background-image: url('image.png');
+  width: 300px;
+  height: 300px;
+}

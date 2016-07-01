@@ -37,7 +37,7 @@ ol.reset-list {
  * 배경 이미지로 설정하는 스타일
  * ----------------------------- */
 a[href$=".psd"] {
-  background-image: url("./image/psd.png");
+  background-image: url("../image/psd.png");
 }
 a[href$=".ai"] {
   background-image: url(../image/ai.png);

@@ -1,0 +1,41 @@
+.reset-list-lecture ul {
+	list-style-type: none;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+}
+
+.lecture-file-list a {
+	display: block;
+	font-size: 2em;
+	text-decoration: none;
+	text-indent: 32px;
+	background-repeat: no-repeat;
+	background-position: 0px 6px;
+}
+
+
+a[href$=".ai"] {
+  background-image: url(../image/ai.png);
+  color: red;
+}
+
+a[href$=".avi"] {
+  background-image: url(../image/avi.png);
+  color: blue;
+}
+
+a[href$=".mov"] {
+  background-image: url(../image/mov.png);
+  color: green;
+}
+
+a[href$=".pdf"] {
+  background-image: url(../image/pdf.png);
+  color: orange;
+}
+
+a[href$=".psd"] {
+  background-image: url(../image/psd.png);
+  color: yellow;
+}
