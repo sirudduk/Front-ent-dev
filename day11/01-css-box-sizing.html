@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <style>
+      body {
+        margin: 5% 15%;
+        font: 1rem/1.5 Verdana;
+        color: #494949;
+      }
+
+      /*BOX DESIGN*/
+
+      [class$="-box"] {
+        margin-bottom: 1rem;
+        outline:  1px dotted #484848;
+        padding-top: 0.45rem;
+        padding-bottom: 0.45rem;
+        text-align: center;
+        width: 240px;
+        border: 5px solid #b9121b;
+        padding-left: 20px;
+      }
+
+      .content-box {box-sizing: content-box; background: #f6e497;}
+      .border-box {box-sizing: border-box; background: #cab34e;}
+
+      /*container*/
+
+      .container {
+        background: #eee;
+      }
+      .row::after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+
+      .col {
+        float: left;
+        width: 33.3333%;
+        text-align: center;
+        color: #fff;
+        box-sizing: border-box;
+      }
+
+      .col:nth-child(1) {background: #8e2800;}
+      .col:nth-child(2) {background: #ca2704;}
+      .col:nth-child(3) {
+        background: #fd5f32;
+        padding-left: 10%;
+        padding-left: 30%;}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="content-box">cotent-box</div>
+
+
+    <div class="border-box">border-box</div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">column</div>
+        <div class="col">column</div>
+        <div class="col">column</div>
+      </div>
+    </div>
+</body>
+</html>

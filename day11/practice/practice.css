@@ -1,0 +1,18 @@
+.position {
+  background: #49A8D3;
+  width: 1000px;
+  height: 1000px;
+  position: relative;
+  top: 200px;
+  left: 150px;
+
+}
+
+.position2 {
+  background: #EF5047;
+  width: 50px;
+  height: 100px;
+  position: absolute;
+  bottom: -300px;
+}
+

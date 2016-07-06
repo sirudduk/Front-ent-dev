@@ -1,0 +1,50 @@
+html, body {
+	height: 100vh;
+}
+
+.button-backward {
+	border-radius: 15px 0 0 15px;
+}
+.button-forward {
+	border-radius: 0px 15px 15px 0px;
+ 
+}
+
+.btn {
+	float: left;
+	border: 2px solid #eee;
+	padding: 20px;
+	box-shadow: 0px 5px 30px #fff;
+
+}
+
+
+.clearfix::after,
+.cf::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.buttonset-movie-control {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.button-wrap {
+	width: 300px;
+	
+
+
+}
+
+.btn:hover {
+	color: #49A8D3;
+	box-shadow: inset 0px 5px 30px #fff;
+}
+
+.background {
+	background: linear-gradient(to left, #49A8D3, #11357E, #25A162);
+}

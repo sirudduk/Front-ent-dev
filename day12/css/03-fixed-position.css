@@ -1,0 +1,11 @@
+body {
+	font-family: "Spoqa Han Sans";
+	font-weight: 200;
+	color: #fff;
+	background: 
+linear-gradient(-45deg, transparent 50%, hsla(0,50%,0%,0.5) 51%, transparent 52%),
+radial-gradient(circle at center 10%, transparent, #000),
+url(../image/Rain-City.jpg) no-repeat center;
+background-size:30px 30px, 100%, cover;
+}
+

@@ -1,0 +1,50 @@
+
+
+
+body {
+	margin: 0;
+	line-height: 1.5;
+	text-align: center;
+}
+
+
+
+.clearfix::after {
+	display: block;
+	content: '';
+	clear: both;
+}
+
+.half, .say, .speaker-group img{
+	float:left;
+	width: 50%;
+	height: auto;
+}
+
+.say {
+	margin-top: 60px;
+}
+
+p {
+	margin-left: 20px;
+	margin-right: 20px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 19px;
+	line-height: 1.1;
+}
+
+hr {
+	width: 40px;
+}
+
+.twitter:hover {
+	fill: #49A8D3;
+}
+
+.speaker:hover {
+	background-color: #FBCB43;
+}

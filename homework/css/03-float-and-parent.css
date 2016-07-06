@@ -1,0 +1,19 @@
+.parent	{
+	border: 1px solid #eceded;
+	padding: 1rem;
+	margin-bottom: 2rem;
+
+}
+
+.child {
+	float: left;
+	width: 140px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	color: hsl(0, 0%, 100%);
+}
+
+.child:first-child      {background: hsl(20, 20%, 40%);}
+.child:ntn-child(2)  {background: hsl(140, 20%, 40%);}
+.child:last-child       {background: hsl(220, 20%, 40%);}

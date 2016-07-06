@@ -1,0 +1,66 @@
+body {
+	margin: 0;
+	/*font-size: 16px;*/
+	line-height: 1.5;
+}
+
+.clearfix::after {
+	display: block;
+	content: '';
+	clear: both;
+}
+
+.speaker-group {
+	background: #eee;
+	color: #464646;
+}
+
+.speaker-group * {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.speaker-group .speaker {
+	background: #fff;
+}
+
+.speaker-group .speaker img {
+	float: left;
+	width: 50%;
+	height: auto;
+}
+
+.speaker-group .speaker .speaker-bio {
+	text-align: center;
+}
+
+.speaker-group .speaker .speaker-bio h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 19px;
+	line-height: 1.1;
+}
+
+.speaker-group .speaker .speaker-bio p {
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+.layout-half  {
+	float: left;
+	width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

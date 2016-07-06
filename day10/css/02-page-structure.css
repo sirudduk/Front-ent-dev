@@ -1,0 +1,40 @@
+/*page 구조
+css 프로트 레이아웃 디자인
+플로트 영향을 받는 요소에서 해제를 하지 않을 경우 발생하는 문제.*/
+
+/*공통 모듈 디자인*//*
+[class*="page-"]::before {
+
+}*/
+
+[class*="page-"] {
+	height: 20vh;
+	text-align: center;
+}
+
+/*개별모듈디자인*/
+.page-header {
+	background: #7045cf;
+}
+
+.page-navigation {
+	background: #EF5047;
+}
+
+.page-main{
+    background: #00FFFF;
+    width: 50%;
+    height: 30vmax;
+    float: left;
+}
+
+.page-sidebar{
+    background: #FF8BD0;
+    width: 50%;
+    float: right;
+}
+
+.page-footer {
+	clear: both;
+	background: #92D8EA;
+}
