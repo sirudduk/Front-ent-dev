@@ -1,0 +1,26 @@
+.a {
+	background: 
+	#757D91;
+	/* width: 500px; */
+	/* height: 500px; */
+}
+
+.a-1 {
+	background: #25A162;
+	width: 120px;
+	height: 300px;
+	float: left;
+	transform: translateX;
+}
+.a-2 {
+	background: #EF5047;
+	width: 120px;
+	height: 300px;
+	float: left;
+}
+.a-3 {
+	background: #B6C670;
+	width: 120px;
+	height: 327px;
+	float: left;
+}
