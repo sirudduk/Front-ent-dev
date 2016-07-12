@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="UTF-8">
+  <title>CSS3 버튼 이펙트</title>
+  <link rel="stylesheet" href="../Resources/effects/button-effects.css">
+  <style>
+    .wrapper {
+      margin: 4rem;
+      text-align: center;
+    }
+    button {
+      margin: 1em;
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div>  
+      <button type="button" class="button slide-from-top">SLIDE FROM TOP</button>
+      <button type="button" class="button slide-from-bottom">SLIDE FROM BOTTOM</button>
+      <button type="button" class="button slide-from-left">SLIDE FROM LEFT</button>
+      <button type="button" class="button button-roundest slide-from-right">SLIDE FROM RIGHT</button>
+    </div>
+    
+    <div class="grow-button-set">
+      <div>
+      <!-- grow rectangle -->
+        <!-- <button type="button" class="button grow-rectangle">grow RECTANGLE</button> -->
+        <button class="button grow-rectangle" type="button"><a href="#">grow rectangle</a></button>
+        <!-- grow ellipse -->
+         <button type="button" class="button grow-ellipse">grow ellipse</button>
+        <!-- grow circle -->
+         <button type="button" class="button grow-circle">grow circle</button>
+       </div>
+       <div>
+        <!-- grow skew -45deg -->
+         <button type="button" class="button grow-skew-45">grow skew-45deg</button>
+        <!-- grow spin cw -->
+         <button type="button" class="button grow-spin">grow spin</button>
+        <!-- grow spin ccw -->
+         <button type="button" class="button grow-spin-ccw">grow spin-ccw</button>
+        </div>
+    </div>
+     
+  </div>
+
+</body>
+</html>
