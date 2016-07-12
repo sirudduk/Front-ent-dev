@@ -13,40 +13,65 @@
     button {
       margin: 1em;
     }
-
-
+    .kung-fu-panda {
+      position: relative;
+      top: -250px;
+      z-index: 1000;
+      transform-origin: 10px 10px;
+      transform: translateY(-113px) scale(0.5) rotate(41deg);
+      animation: holdOn 4s infinite alternate cubic-bezier(0.68, 0.18, 0.13, 0.73);
+    }
+    @keyframes holdOn {
+      0% {
+        transform: translateY(-113px) scale(0.5) rotate(20deg);
+      }
+      50% {
+        transform: translateY(-113px) scale(0.5) rotate(80deg);
+      }
+      100% {
+        transform: translateY(-113px) scale(0.5) rotate(20deg);
+      }
+    }
   </style>
 </head>
 <body>
 
   <div class="wrapper">
-    <div>  
+
+    <div class="slide-button-set">
+      <!-- slide from left -->
+      <button type="button" class="button button-round slide-from-left">SLIDE FROM LEFT</button>
+      <!-- slide from right -->
+      <button type="button" class="button button-rounder slide-from-right">SLIDE FROM RIGHT</button>
+      <!-- slide from top -->
       <button type="button" class="button slide-from-top">SLIDE FROM TOP</button>
+      <!-- slide from bottom -->
       <button type="button" class="button slide-from-bottom">SLIDE FROM BOTTOM</button>
-      <button type="button" class="button slide-from-left">SLIDE FROM LEFT</button>
-      <button type="button" class="button button-roundest slide-from-right">SLIDE FROM RIGHT</button>
     </div>
-    
+
     <div class="grow-button-set">
       <div>
-      <!-- grow rectangle -->
-        <!-- <button type="button" class="button grow-rectangle">grow RECTANGLE</button> -->
-        <button class="button grow-rectangle" type="button"><a href="#">grow rectangle</a></button>
+        <!-- grow rectangle -->
+        <button type="button" class="button button-round grow-rectangle">GROW RECTANGLE</button>
         <!-- grow ellipse -->
-         <button type="button" class="button grow-ellipse">grow ellipse</button>
+        <button type="button" class="button grow-ellipse">GROW ELLIPSE</button>
         <!-- grow circle -->
-         <button type="button" class="button grow-circle">grow circle</button>
-       </div>
-       <div>
+        <button type="button" class="button grow-circle">GROW CIRCLE</button>
+      </div>
+      <div>
+        <!-- grow skew 45deg -->
+        <button type="button" class="button grow-skew">GROW SKEW</button>
         <!-- grow skew -45deg -->
-         <button type="button" class="button grow-skew-45">grow skew-45deg</button>
+        <button type="button" class="button grow-skew-45">GROW SKEW-45</button>
         <!-- grow spin cw -->
-         <button type="button" class="button grow-spin">grow spin</button>
+        <button type="button" class="button grow-spin">GROW SPIN</button>
         <!-- grow spin ccw -->
-         <button type="button" class="button grow-spin-ccw">grow spin-ccw</button>
-        </div>
+        <button type="button" class="button grow-spin-ccw">GROW SPIN-CCW</button>
+      </div>
     </div>
-     
+
+    <img class="kung-fu-panda" src="images/Kung-Fu-Panda.png" alt="Kung Fu Panda" width="512" height="512">
+
   </div>
 
 </body>
