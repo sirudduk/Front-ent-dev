@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+/*.grid-container {
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.show-guide {
+	height: 100vh;
+	background: linear-gradient (to bottom, transparent 9px, hsla(248, 99%, 71%, 0.7) 9px);
+	background-size: 1px 10px;
+}*/
+
+
+
+
+.grid-container.show-all-grid {
+	height: 200vh;
+	background: linear-gradient( to bottom, #eee 9px, rgba(127, 108, 254, 0.7) 9px) no-repeat,
+	linear-gradient( to right, transparent 10px, hsla(357,97%,71%,0.55) 10px, hsla(357,97%,71%,0.55) 70px, transparent 70px) ;
+	background-size: 1px 10px, 80px 1px;
+}

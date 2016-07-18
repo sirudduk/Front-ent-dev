@@ -1,8 +1,8 @@
-/*! common.css © sirudduk 2016 */
+@charset="UTF-8"
 
-/* 목록 초기화 재사용 가능한 스타일 모듈 */
-.reset-list ul,
-.reset-list ol,
+/* Ã«ÂªÂ©Ã«Â¡Â Ã¬Â´Ë†ÃªÂ¸Â°Ã­â„¢â€ Ã¬Å¾Â¬Ã¬â€šÂ¬Ã¬Å¡Â© ÃªÂ°â‚¬Ã«Å Â¥Ã­â€¢Å“ Ã¬Å Â¤Ã­Æ’â‚¬Ã¬ÂÂ¼ Ã«ÂªÂ¨Ã«â€œË† */
+.reset-list-group ul,
+.reset-list-group ol,
 ul.reset-list,
 ol.reset-list {
   margin-top:    0;
@@ -11,30 +11,54 @@ ol.reset-list {
   list-style:    none;
 }
 
-/*이미지 하단의 공백을 제거하는 속성*/
+/* Ã¬ÂÂ´Ã«Â¯Â¸Ã¬Â§â‚¬ Ã­â€¢ËœÃ«â€¹Â¨Ã¬ÂËœ ÃªÂ³ÂµÃ«Â°Â±Ã¬Ââ€ž Ã¬Â Å“ÃªÂ±Â°Ã­â€¢ËœÃ«Å â€ Ã¬â€ ÂÃ¬â€žÂ± */
 img {
-	vertical-align: bottom;
+  vertical-align: bottom;
 }
 
-
-/*이미지 하단에 공백을 형성하여 앞으로 배치되는 글들이 동일한 공간을 가질 수 있도록 설정*/
-
+/* Ã¬ÂÂ´Ã«Â¯Â¸Ã¬Â§â‚¬ Ã­â€¢ËœÃ«â€¹Â¨Ã¬â€”Â ÃªÂ³ÂµÃ«Â°Â±Ã¬Ââ€ž Ã­Ëœâ€¢Ã¬â€žÂ±Ã­â€¢ËœÃ¬â€”Â¬ Ã¬Ëœâ€ Ã¬Å“Â¼Ã«Â¡Å“ Ã«Â°Â°Ã¬Â¹ËœÃ«ÂËœÃ«Å â€ ÃªÂ¸â‚¬Ã«â€œÂ¤Ã¬ÂÂ´ Ã«Ââ„¢Ã¬ÂÂ¼Ã­â€¢Å“ ÃªÂ³ÂµÃªÂ°â€žÃ¬Ââ€ž ÃªÂ°â‚¬Ã¬Â§Ë† Ã¬Ë†Ëœ Ã¬Å¾Ë†Ã«Ââ€žÃ«Â¡Â Ã¬â€žÂ¤Ã¬Â â€¢ */
 .blank-bottom-img img + *,
 img.blank-bottom + * {
-	overflow: hidden;
+  overflow: hidden;
 }
 
+img.flex-img {
+  width: 100%;
+  height: auto;
+}
 
-/*클리어 픽스*/
+img.horizontal-center-img {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
 
+/* Ã­ÂÂ´Ã«Â¦Â¬Ã¬â€“Â´ Ã­â€Â½Ã¬Å Â¤ */
 .clearfix::after,
 .cf::after {
-	content: '';
-	display: block;
-	clear: both;
+  content: '';
+  display: block;
+  clear: both;
 }
 
 .lt-ie8 .clearfix,
-.lt-ie8 .cj {
-	zoom:1;
+.lt-ie8 .cf {
+  zoom: 1;
+}
+
+.readable-hidden {
+  overflow: hidden;
+  /* position: absolute; */
+  width:    1px;
+  height:   1px;
+  margin:   -1px;
+  border:   0;
+  padding:  0;
+}
+.readable-hidden.focusable:focus {
+  overflow: visible;
+  position: static;
+  clip:     auto;
+  width:    auto;
+  height:   auto;
+  margin:   0;
 }

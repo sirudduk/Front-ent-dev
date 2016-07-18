@@ -1,0 +1,38 @@
+.stft {
+	border: 1px solid #999;
+	height: 110px;
+	width: 70px;
+	background: url(../images/stft.png) no-repeat;
+	animation: sprite steps(13) 1s infinite;
+}
+
+@keyframes sprite {
+	0% { background-position-x: 0; }
+	100% { background-position-x: -910px; }
+}
+
+.firefox {
+	border: 1px solid #999;
+	height: 156px;
+	width: 156px;
+	background: url(../images/css-sprite-animation-steps-foxtail.png);
+	animation: tail steps(45) 0.5s infinite;
+}
+
+@keyframes tail {
+	0% { background-position-x: 0;  }
+	100% { background-position-x: -7020px;  }
+}
+
+.cat {
+	border: 1px solid #999;
+	height: 200px;
+	width: 399px;
+	background: url(../images/css-sprite-animation-steps-rachel.png);
+	animation: cats steps(12) 1s infinite;
+}
+
+@keyframes cats {
+	0% { background-position-y: 0;  }
+	100% { background-position-y: -2393px;  }
+}

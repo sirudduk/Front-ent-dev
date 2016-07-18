@@ -1,0 +1,53 @@
+body {
+	margin: 0px;
+	font-family: "Spoqa Han Sans";
+}
+
+.navi {
+	/*margin-left: 20px;
+	margin-top: 20px;*/
+	background: url("hero-desktop.jpg") no-repeat center center;
+	background-size: cover;
+	height: 100vh;
+	text-underline-position: none;
+	font-size: .8rem;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #F6F6F6;
+	
+}
+
+
+.logo {
+	width: 200px;
+	height: 90px;
+	float: left;
+	margin-top: 25px;
+	margin-left: 80px;
+
+
+
+}
+
+.domains {
+	float: left;
+	margin-left: 80px;
+	margin-top: 32px;
+	
+}
+
+.websites {
+	float: left;
+	margin-left: 80px;
+	margin-top: 32px;
+	
+}
+
+.stores {
+	float: left;
+	margin-left: 80px;
+	margin-top: 32px;
+	
+}
+
+a:link, a:visited, a:active, a:hover {text-decoration: none; color: #F6F6F6;}

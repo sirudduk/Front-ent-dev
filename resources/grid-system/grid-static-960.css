@@ -1,4 +1,4 @@
-/*! grid-system(Static).css © sirudduk, 2016 */
+/*! grid-system(Static).css © yamoo9.net, 2016 */
 /**
  * --------------------------------
  * 그리드 컨테이너 모듈
@@ -24,7 +24,7 @@ body.overlay-grid::after,
 body.overlay-grid::after,
 .container.show-grid,
 .container.hover-hide-grid {
-  background: url("images/GS-pattern-10-60-10.png");
+  background: url("./images/GS-pattern-10-60-10.png");
 }
 
 .container.hover-hide-grid:hover {
