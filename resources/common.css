@@ -1,6 +1,6 @@
-@charset="UTF-8"
+@charset "utf-8";
 
-/* Ã«ÂªÂ©Ã«Â¡Â Ã¬Â´Ë†ÃªÂ¸Â°Ã­â„¢â€ Ã¬Å¾Â¬Ã¬â€šÂ¬Ã¬Å¡Â© ÃªÂ°â‚¬Ã«Å Â¥Ã­â€¢Å“ Ã¬Å Â¤Ã­Æ’â‚¬Ã¬ÂÂ¼ Ã«ÂªÂ¨Ã«â€œË† */
+
 .reset-list-group ul,
 .reset-list-group ol,
 ul.reset-list,
@@ -11,20 +11,40 @@ ol.reset-list {
   list-style:    none;
 }
 
-/* Ã¬ÂÂ´Ã«Â¯Â¸Ã¬Â§â‚¬ Ã­â€¢ËœÃ«â€¹Â¨Ã¬ÂËœ ÃªÂ³ÂµÃ«Â°Â±Ã¬Ââ€ž Ã¬Â Å“ÃªÂ±Â°Ã­â€¢ËœÃ«Å â€ Ã¬â€ ÂÃ¬â€žÂ± */
 img {
   vertical-align: bottom;
 }
 
-/* Ã¬ÂÂ´Ã«Â¯Â¸Ã¬Â§â‚¬ Ã­â€¢ËœÃ«â€¹Â¨Ã¬â€”Â ÃªÂ³ÂµÃ«Â°Â±Ã¬Ââ€ž Ã­Ëœâ€¢Ã¬â€žÂ±Ã­â€¢ËœÃ¬â€”Â¬ Ã¬Ëœâ€ Ã¬Å“Â¼Ã«Â¡Å“ Ã«Â°Â°Ã¬Â¹ËœÃ«ÂËœÃ«Å â€ ÃªÂ¸â‚¬Ã«â€œÂ¤Ã¬ÂÂ´ Ã«Ââ„¢Ã¬ÂÂ¼Ã­â€¢Å“ ÃªÂ³ÂµÃªÂ°â€žÃ¬Ââ€ž ÃªÂ°â‚¬Ã¬Â§Ë† Ã¬Ë†Ëœ Ã¬Å¾Ë†Ã«Ââ€žÃ«Â¡Â Ã¬â€žÂ¤Ã¬Â â€¢ */
 .blank-bottom-img img + *,
 img.blank-bottom + * {
   overflow: hidden;
 }
 
+/*컨텐츠 이미지 (<img>)에 적용되는 fluid image*/
+
 img.flex-img {
   width: 100%;
   height: auto;
+}
+
+img.keep-original-scale {
+  max-width: 100%;
+}
+
+/*배경 이미지(CSS)에 적용되는 Fluid BG Image*/
+
+.flex-img-3-4 {
+  width: 100%;
+  padding-bottom: 75%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.flex-img-9-16 {
+  width: 100%;
+  padding-bottom: 56.25%;
+  background-size: cover;
+  background-position: center center;
 }
 
 img.horizontal-center-img {
@@ -32,7 +52,6 @@ img.horizontal-center-img {
   transform: translateX(-50%);
 }
 
-/* Ã­ÂÂ´Ã«Â¦Â¬Ã¬â€“Â´ Ã­â€Â½Ã¬Å Â¤ */
 .clearfix::after,
 .cf::after {
   content: '';
@@ -40,14 +59,9 @@ img.horizontal-center-img {
   clear: both;
 }
 
-.lt-ie8 .clearfix,
-.lt-ie8 .cf {
-  zoom: 1;
-}
-
 .readable-hidden {
   overflow: hidden;
-  /* position: absolute; */
+  position: absolute;
   width:    1px;
   height:   1px;
   margin:   -1px;

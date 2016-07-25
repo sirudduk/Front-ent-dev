@@ -1,0 +1,15 @@
+body {
+	margin: 0;
+}
+
+.grid-container {
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.grid-container.show-guide {
+	height: 200vh;
+	background: linear-gradient(to right, transparent 110px, rgba(127, 108, 254, 0.7) 110px) repeat;
+}
+  

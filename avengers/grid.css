@@ -1,0 +1,51 @@
+
+
+/**
+ * Grid System (160 [unit(130) + gutter(15)], 8 columns)
+ * 1280 - 30 = 1250px
+ * base-font-size: 0.9375rem (18px)
+ * base-leading-ratio: 1.5; // 18 * 1.5 = 27px
+ * gutter-direction: after; // margin-right ÃƒÆ’Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¬Ãƒâ€¦Ã‚Â¡Ãƒâ€šÃ‚Â©
+ */
+
+/**
+ * --------------------------------
+ * Overlay Grid Guideline Module
+ * ----------------------------- */
+.grid-container::before {
+  content: '';
+  position: absolute;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.grid-container[class*="show-grid"]::before {
+  height: 500vh;
+}
+
+
+.grid-container.show-grid-split::before {
+  background: linear-gradient(90deg, transparent 10px, rgba(191, 64, 64, 0.3) 10px, rgba(191, 64, 64, 0.3) 90px, transparent 90px), linear-gradient(transparent 23px, #26923f 23px);
+  background-size: 100px 1px, 1px 24px;
+}
+
+/**
+ * --------------------------------
+ * Grid Container Module
+ * ----------------------------- */
+.grid-container {
+  position: relative;
+  width:1200px;
+  margin: 0 auto;
+}
+
+/**
+ * --------------------------------
+ * Grid Module
+ * ----------------------------- */
+.grid::after {
+  content: '';
+  display: block;
+  clear: both;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="UTF-8">
+  <title>RWD: Responsive Web Design</title>
+  <link rel="stylesheet" href="../Resources/common.css">
+  <link rel="stylesheet" href="../Resources/initialization/normalize.css">
+  <!-- <link rel="stylesheet" href="../Resources/grid-system/grid-fluid-1280-8.css"> -->
+  <link rel="stylesheet" href="css/rwd.css">
+  <style>
+    /* Hi-DPI 이미지를 처리하기 위한 미디어 쿼리 구문 */
+    @media
+      (-webkit-min-device-pixel-ratio: ${1:2}),
+      (min--moz-device-pixel-ratio: ${1:2}),
+      (min-resolution: ${1:2}dppx),
+      (min-resolution: 96*${1:2}$2dpi)
+    {
+        /* 고해상도 처리를 위한 Bitmap 이미지 코드 */
+        $0
+    }
+    .container {
+      max-width: 1230px;
+      min-height: 100vh;
+      margin-left: auto;
+      margin-right: auto;
+      background: #eaeaea;
+    }
+    .container h2 {
+      margin-top: 0;
+    }
+    video {
+      border: 1px solid;
+    }
+    .keep-original-scale {
+      max-width: 640px;
+    }
+    iframe {
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>RWD Video</h2>
+
+    <h3>width: 100%; height: auto; max-width: 640px;</h3>
+    <video
+      class="keep-original-scale rwd-video"
+      poster="../../sirudduk/work/image/artist/a1.jpg"
+      src="media/F201308021823010.mp4"
+      width="640"
+      height="360"
+      controls>
+    </video>
+
+    <hr>
+
+    <h3>width: 100%; height: auto;</h3>
+    <video
+      class="rwd-video"
+      poster="../../sirudduk/work/image/artist/a1.jpg"
+      src="media/F201308021823010.mp4"
+      width="640"
+      height="360"
+      controls>
+    </video>
+
+    <hr>
+
+    <h3>&lt;iframe&gt; Youtube 예시</h3>
+    <div class="rwd-media-container">
+      <iframe
+        class="rwd-media"
+        width="640"
+        height="360"
+        src="https://www.youtube.com/embed/4vCoFLsJs5Q"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <h3>&lt;iframe&gt; Vimeo 예시</h3>
+    <div class="rwd-media-container">
+      <iframe
+        allowfullscreen
+        class="rwd-media"
+        src="https://player.vimeo.com/video/174668765"></iframe>
+    </div>
+  </div>
+
+</body>
+</html>

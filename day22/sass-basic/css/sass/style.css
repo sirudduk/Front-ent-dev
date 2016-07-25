@@ -1,0 +1,25 @@
+/*
+ multi
+ line
+ Comment
+ */
+.page .page-header {
+  position: relative;
+  height: 20vh;
+}
+
+.page .brand {
+  overflow: hidden;
+  position: absolute;
+  left: 100%;
+}
+
+.page .brand a {
+  color: #fc414b;
+}
+
+.page .brand a:hover {
+  color: #6b141c;
+}
+
+/*# sourceMappingURL=../../../map/sass/style.css.map */

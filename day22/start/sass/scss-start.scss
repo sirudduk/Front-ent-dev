@@ -1,0 +1,19 @@
+
+$blank: 20;
+
+body {
+	margin:$blank;
+}
+
+.page {
+	.page-header {
+		height:100vh;
+	}
+	.page-navigation ul {
+		padding-left:$blank;
+		li {
+			list-style: none;
+		}
+	}
+}
+

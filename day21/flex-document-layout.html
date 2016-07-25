@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title></title>
+    <style>
+    	body { margin: 0; }
+    	header, footer { height: 100px; }
+    	header { background: #ff0; }
+    	footer { background: #feae09; }
+    	main { flex-direction: column; height: 500px; display:flex; border: 10px solid #888 ; height: 400px;}
+    	section { order:3; background: #FBCB43;  flex-basis: 300px; height: 300px;}
+    	.side-A { order:1; background: #49A8D3; width: 300px;}
+    	.side-B { order:2; background: #4FC3A0; width: 200px; flex-grow: 1;}
+    	aside {  flex-shrink: 0; height: 200px;}
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <main>
+    	<section>section</section>
+    	<aside class="side-A">aside A</aside>
+    	<aside class="side-B">aside B</aside>
+    </main>
+    <footer>footer</footer>
+</body>
+</html>
