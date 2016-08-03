@@ -1,0 +1,63 @@
+//  
+	* ------------------------------
+	* Sass Script Operation
+	* ----------------------------
+
+@import var
+@import mixins
+
+// 웹폰트
+// (인터폴레이션 보간법) => 문자를 접합(용접과 비슷)
+@import url("http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-#{$spoqa-language}.css")
+@import url("https://fonts.googleapis.com/css?family=Catamaran:400,100")
+
+// 본문설계
+body
+	font: #{$base-font-size}/#{$base-line-height} 
+	// font-size: $base-font-size
+	// font-family: $spoqa-font-family
+	// line-height: $base-line-height
+
+// 보간법 ( Interpolation ) #()
+
+$selector: fast-campus
+$pseudo-name: after
+
+#area .#{$selector}
+	margin:
+		left: 20%
+		right: 20%
+	&::#{$pseudo-name}
+		content: 'dynamic content'
+
+		// 
+		// -----------------------
+		// 보간법 + 미디어쿼리
+$media-md: "screen and (min-width: 760px)"
+$media-lg: "screen and (min-width: 1220px)"
+$media-print: "not screen and (min-width: 21cm)"
+
+.#{$selector}
+	@media #{$media-md}
+		display: flex
+		flex-flow: row-reverse wrap
+	@media #{$media-lg}
+		display: block
+		padding: 1rem
+	@media #{$media-print}
+		background: #fff !important
+		color: #000 !important
+
+
+
+// 믹스인 사용
+.header
+	+box-sizing
+	+size(1000px, 300px)
+
+.main
+	+box-sizing
+
+
+body
+	+star-five(orange)

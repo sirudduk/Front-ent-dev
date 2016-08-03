@@ -1,0 +1,27 @@
+// 가운데로 정렬되는 코드를 작성하는데
+%center-pos
+	display: flex
+	justify-content: center
+	align-items: center
+%align-center-margin
+	margin:
+		left: auto
+		right: auto
+
+$container-width: 1260px
+$dark-gray: #3d3c31
+$bp-md: 800px
+
+.container
+	@extend %align-center-margin
+	max-width: $container-width
+	min-height: $container-width/2
+	
+
+.page-footer
+	@extend %align-center-margin
+	width: 100vh
+	@media screen and (min-width: $bp-md)
+		width: 90%
+	background: $dark-gray
+	color: rgba( lighten($dark-gray, 40%), 0.45 )

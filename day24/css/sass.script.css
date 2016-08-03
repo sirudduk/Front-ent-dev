@@ -1,0 +1,102 @@
+@import url("http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-ko.css");
+@import url("https://fonts.googleapis.com/css?family=Catamaran:400,100");
+body {
+  font: 14px/1.5;
+}
+
+#area .fast-campus {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+#area .fast-campus::after {
+  content: 'dynamic content';
+}
+
+@media screen and (min-width: 760px) {
+  .fast-campus {
+    display: flex;
+    flex-flow: row-reverse wrap;
+  }
+}
+
+@media screen and (min-width: 1220px) {
+  .fast-campus {
+    display: block;
+    padding: 1rem;
+  }
+}
+
+@media not screen and (min-width: 21cm) {
+  .fast-campus {
+    background: #fff !important;
+    color: #000 !important;
+  }
+}
+
+.header {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 1000px;
+  height: 300px;
+}
+
+.main {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 50px 0;
+  position: relative;
+  display: block;
+  color: orange;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid orange;
+  border-left: 100px solid transparent;
+  -moz-transform: rotate(35deg);
+  -webkit-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  -o-transform: rotate(35deg);
+}
+
+body::before {
+  border-bottom: 80px solid orange;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -45px;
+  left: -65px;
+  display: block;
+  content: '';
+  -webkit-transform: rotate(-35deg);
+  -moz-transform: rotate(-35deg);
+  -ms-transform: rotate(-35deg);
+  -o-transform: rotate(-35deg);
+}
+
+body::after {
+  position: absolute;
+  display: block;
+  color: orange;
+  top: 3px;
+  left: -105px;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid orange;
+  border-left: 100px solid transparent;
+  -webkit-transform: rotate(-70deg);
+  -moz-transform: rotate(-70deg);
+  -ms-transform: rotate(-70deg);
+  -o-transform: rotate(-70deg);
+  content: '';
+}
+
+/*# sourceMappingURL=../map/sass.script.css.map */

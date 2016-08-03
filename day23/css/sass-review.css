@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/* CSS Comment */
+/*
+	여러
+	줄
+	라인
+	출력
+	가능? */
+body {
+  margin: 0;
+}
+
+.error, .seriousError {
+  padding: 0px;
+}
+
+.error.intrusion.bob, .intrusion.bob.seriousError {
+  border: 1px #f00;
+  background-color: #fdd;
+}
+
+.error.intrusion, .intrusion.seriousError {
+  background-image: url("/image/hacked.png");
+}
+
+.seriousError {
+  border-width: 3px;
+}
+
+/*# sourceMappingURL=../map/sass-review.css.map */

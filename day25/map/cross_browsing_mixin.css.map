@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "../css/cross_browsing_mixin.css",
+	"sources": [
+		"../sass/cross_browsing_mixin.sass"
+	],
+	"mappings": "",
+	"names": []
+}
