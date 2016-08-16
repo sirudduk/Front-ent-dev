@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    	#button-group {
+    		display: flex;
+    		flex-flow: wrap;
+    		position: fixed;
+    		top: 0;
+    		left: 0;
+    		width: 100%;
+    	}
+    	#button-group button {
+    		flex: 1;
+    		border: none;
+    		padding: 1em;
+    		background: #000;
+    		color: #fff;
+    	}
+
+    	#button-group button:nth-child(1) {background: #2F8B93;}
+			#button-group button:nth-child(2) {background: #25A162;}
+			#button-group button:nth-child(3) {background: #4DBEF2;}
+			#button-group button:nth-child(4) {background: #A79BE5;}
+			#button-group button:nth-child(5) {background: #7E6162;}
+
+
+    </style>
+</head>
+<body>
+	<div id="button-group" role="group">
+		<button type="button">#2F8B93</button>
+		<button type="button">#25A162</button>
+		<button type="button">#4DBEF2</button>
+		<button type="button">#A79BE5</button>
+		<button type="button">#7E6162</button>
+	</div>
+
+<script>
+	var btn_group = document.getElementById('button-group'); 
+	var btns = btn_group.getElementsByTagName('button');
+	var body = document.body;
+
+	var btn_1 = btns[0]
+	var btn_2 = btns[1]
+	var btn_3 = btns[2]
+	var btn_4 = btns[3]
+	var btn_5 = btns[4]
+
+	// console.log(btns);
+	btn_1.onmouseenter = function() {
+		var wanted_color = this.firstChild.nodeValue
+		body.style.backgroundColor = wanted_color;
+	};
+	btn_2.onmouseenter = function() {
+		var wanted_color = this.firstChild.nodeValue
+		body.style.backgroundColor = wanted_color;
+	};
+	btn_3.onmouseenter = function() {
+		var wanted_color = this.firstChild.nodeValue
+		body.style.backgroundColor = wanted_color;
+	};
+	btn_4.onmouseenter = function() {
+		var wanted_color = this.firstChild.nodeValue
+		body.style.backgroundColor = wanted_color;
+	};
+	btn_5.onmouseenter = function() {
+		var wanted_color = this.firstChild.nodeValue
+		body.style.backgroundColor = wanted_color;
+	};
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title></title>
+    <style>
+    	form {
+    		display: flex;
+    		flex-direction: column;
+    		align-items: center;
+    	}
+
+			body {
+				height: 100vh;
+			}
+
+    </style>
+</head>
+<body>
+
+		<p class="my-para">
+			<strong>Hello</strong>How are you doing?
+		</p>
+
+    <form action="#" name="primary_form" method="GET" >
+    	<p class="black">
+    		<label for="c_id">ID</label>
+    		<input type="text" name="c_id" id="c_id" placeholder="ID입력">
+    	</p>
+    	<p class="red">
+    		<label for="email">email</label>
+    		<input type="email" name="email" id="email" placeholder="email@naver.com">
+    	</p>
+    	<p>
+    		<button type="submit" name="send">제출</button>
+    	</p>
+    </form>
+
+    <script>
+    	var root_element = document.documentElement;
+    	// console.log('root_element:', root_element); // <html>
+
+    	var inputs = document.getElementsByTagName('input');
+    	var buttons = document.getElementsByTagName('button');
+    	// console.log('inputs:', inputs);
+    	// console.log('buttons', buttons);
+
+    	// ID 속성을 통한 접근 방법 (Interface: Selecting)
+    	var c_id = document.getElementById('c_id');
+    	var email = document.getElementById('email');
+    	// console.log('c_id', c_id);
+    	// console.log('email', email);
+
+    	// ---------------------------
+
+    	var first_para = document.getElementsByTagName('p').item(0);
+    	var first_para_nodes = first_para.childNodes;
+
+    	console.log(first_para_nodes[0].nodeType === document.TEXT_NODE);
+    	console.log(first_para_nodes[1].nodeType === document.ELEMENT_NODE);
+    	console.log(first_para_nodes[2].nodeType === document.TEXT_NODE);
+    </script>
+</body>
+</html>

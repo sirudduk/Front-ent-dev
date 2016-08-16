@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    	body {
+    		display: flex;
+    		justify-content: center;
+    		align-items: center;
+    		height: 100vh;
+    		margin: 0;
+    	}
+    </style>
+</head>
+<body>
+  <button class="red">RED btn</button>
+  <button class="blue">BLUE btn</button>
+
+<script>
+  // var document.getElementsByTagName = document;
+
+  var btn_red = document.getElementsByTagName('button')[0];
+  var btn_blue = document.getElementsByTagName('button')[1];
+  var body = document.body;
+
+  console.log(body);
+
+ btn_red.onclick = function() {
+ 	body.style.backgroundColor = "red";
+ };
+btn_blue.onclick = function() {
+ 	body.style.backgroundColor = "blue";
+ };
+
+</script>
+</body>
+</html>

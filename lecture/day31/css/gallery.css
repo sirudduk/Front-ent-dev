@@ -1,0 +1,35 @@
+body {
+	background: #eee;
+	height: 100vh;
+	margin: 0;
+	position: relative;
+}
+
+.a {
+	background: #A79BE5;
+}
+
+.b {
+	background: #4DBEF2;
+}
+
+.c {
+	background: #4FC3A0;
+}
+
+.a, .b, .c {
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	border: 1px solid #000;
+}
+
+.round {
+	display: flex;
+	flex-direction: column;
+	/* justify-content: space-around; */
+	align-self:;
+	align-items: flex-end;
+	/* justify-content: space-around; */
+	/* justify-content: space-around; */
+}
